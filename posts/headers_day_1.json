@@ -1,0 +1,20 @@
+{
+  "title": "Soldering Headers",
+  "previewImage": {
+    "name": "headers/final_board.png",
+    "loadingColor": "#aba89c"
+  },
+  "previewText": "Header pins are essential for making prototypes interface with test components. Today I added header pins to my Raspberry Pi Zero and the PoseFixer dev kit.",
+  "content": [
+    {
+      "type": "text",
+      "content": "xd this is the first chunk of text"
+    },
+    {
+      "type": "image",
+      "content": "headers/final_board.png",
+      "loadingColor": "#aba89c",
+      "width": "75%"
+    }
+  ]
+}

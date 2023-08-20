@@ -1,0 +1,34 @@
+{
+  "title": "Introduction to PoseFixer",
+  "series": "PoseFixer",
+  "seriesId": 1,
+  "previewImage": {
+    "name": "project_introduction/layout.png",
+    "loadingColor": "#5d5857"
+  },
+  "previewText": "A project to fix my slouch by developing a product to track my posture and notify me when im slouching.",
+  "content": [
+    {
+      "type": "text",
+      "content": "I've always had a pretty bad slouch and I've always *wanted* it gone but never really had the means to fix it. No matter what strategies I employed, I always ended up forgetting my goal and just going back to slouching. Over the summer between my Junior and Senior years of High School, I decided to set out to develop a solution to my slouch. After some investigation I came to the conclusion that the best way to solve my problem would be to develop a small product that would use a variable resistor to detect the slouch in my back and then notify me through my phone and a small motor to generate a vibration."
+    },
+    {
+      "type": "text",
+      "content": "My plan was to try to employ a fail fast ideology to make progress as fast as I can. I didn't expect to have too much time once the school year started so speed was essential. I planned to use EasyEDA to design the board (PCB) that the product would run on and then send the design off to JLCPCB to manufacture. I would purchase the components I would need from Digikey and then reflow solder them onto the board."
+    },
+    {
+      "type": "text",
+      "content": "After a few days of learning the basics ins and outs of PCB design using EasyEDA, I started designing the PCB. I did some research to try to find a good microcontroller and picked out the Nordic NRF52832 MCU. This MCU has the advantage of having Bluetooth support while also being very low energy. I knew from the start a major concern would be the battery life since strapping a battery to someones back can't be comfortable and the larger the battery pack the worse the effect. I also did some research regarding putting an antenae onto my PCB and came to the conclusion that it would be much better if I find a module with an integrated antenae since designing an on-pcb antenae is difficult and requires a lot of testing in real life. That's not something I can easily do while following my fail fast ideology. I quickly found the BC832 module from Fanstel and put that into my schematic alongside some circuitry for the flex sensor. Based on an article I read about programming these modules and loading a bootloader I also exposed FTDI and SWD pins so I could program the module as well as any auxilery circuitry I needed to add in order to make the module work. This is what the schematic looked like after the first few days of work. I also made a very rudimetary layout for it just to practice my layout skills."
+    },
+    {
+      "type": "image",
+      "content": "project_introduction/schematic.png",
+      "loadingColor": "#f4f3f4"
+    },
+    {
+      "type": "image",
+      "content": "project_introduction/layout.png",
+      "loadingColor": "#5d5857"
+    }
+  ]
+}
