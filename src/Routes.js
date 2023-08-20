@@ -1,5 +1,6 @@
 import Home from "./pages/Home"
 import BlogPost from "./pages/blog/BlogPost"
+import NotFound from "./pages/NotFound"
 
 const routes = [
   {
@@ -9,6 +10,10 @@ const routes = [
   {
     path: "/blog/:post",
     element: <BlogPost />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]
 
