@@ -19,15 +19,18 @@ const PostPreview = ({
           navigate(`/blog/${post}`);
         }}
       >
-        <div className="text-4xl">
+        <p className="text-4xl">
           {postParsed.title}
-        </div>
+        </p>
+        <p className="text-sm">
+          {postParsed.series} #{postParsed.seriesId}
+        </p>
         <div className="flex items-center justify-center">
-          <LoadingImage image={postParsed.previewImage.name} loadingColor={postParsed.previewImage.loadingColor} className="my-2 w-full aspect-video" />
+          <LoadingImage image={postParsed.previewImage.name} loadingColor={postParsed.previewImage.loadingColor} className="my-2 rounded-md border-2 border-midnight w-full aspect-video" />
         </div>
-        <div>
+        <p>
           {postParsed.previewText}
-        </div>
+        </p>
       </div>
     )
 }

@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <FullContextPage>
       <div className="flex flex-auto gap-5 items-center justify-center">
-        <PostPreview post="headers_day_1" />
+        <PostPreview post="project_introduction" />
         <PostPreview post="headers_day_1" />
         <PostPreview post="headers_day_1" />
       </div>

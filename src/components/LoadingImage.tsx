@@ -23,7 +23,7 @@ const LoadingImage = ({
     <>
       {(loading ? (
         <div
-          className={clsx(className, `border-2 border-midnight rounded-md animate-pulse bg-[${loadingColor}]`)}
+          className={clsx(className, `animate-pulse bg-[${loadingColor}]`)}
         >
         </div>
       ) : null)}
@@ -31,7 +31,7 @@ const LoadingImage = ({
         src={imageData}
         className={clsx(
           className, 
-          "object-cover border-2 border-midnight rounded-md",
+          "object-cover",
           {
             "hidden": loading,
           }

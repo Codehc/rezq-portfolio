@@ -10,8 +10,8 @@ const BlogPost = () => {
 
   return (
     <FullContextPage className="flex justify-center">
-      <div className="w-4/6">
-        <p>{postParsed.title}</p>
+      <div className="flex flex-col gap-y-2 w-4/6 p-2 rounded-md border-4 border-gray-300 bg-gray-200">
+        <p className="font-bold text-4xl">{postParsed.title}</p>
         {
           postParsed.content.map(({ 
             type,
@@ -27,15 +27,11 @@ const BlogPost = () => {
             height: string;
           }) => {
             if (type === "text") {
-              return <p>{content}</p>
+              return <p className="text-lg">{content}</p>
             } else if (type === "image") {
-              return (
-                <div className="flex justify-center">
-                  <LoadingImage image={content} loadingColor={loadingColor} width={width} height={height} />
-                </div>
-              )
+              return <LoadingImage image={content} loadingColor={loadingColor} width={width} height={height} className={`rounded-md shadow-lg border-4 border-[${loadingColor}]`} />
             } else {
-              return <p>Invalid content type: {type}</p>
+              return <p className="text-red">Invalid content type: {type}</p>
             }
           })
         }
