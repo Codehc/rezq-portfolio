@@ -5,11 +5,7 @@ import { BrowserRouter, useRoutes } from "react-router-dom";
 function App() {
   let app = useRoutes(routes);
 
-  return (
-    <BrowserRouter basename="rezq-portfolio">
-      {app}
-    </BrowserRouter>
-  );
+  return app;
 }
 
 export default App;
