@@ -10,7 +10,7 @@
   "content": [
     {
       "type": "text",
-      "content": "I've always had a pretty bad slouch and I've always *wanted* it gone but never really had the means to fix it. No matter what strategies I employed, I always ended up forgetting my goal and just going back to slouching. Over the summer between my Junior and Senior years of High School, I decided to set out to develop a solution to my slouch. After some investigation I came to the conclusion that the best way to solve my problem would be to develop a small product that would use a variable resistor to detect the slouch in my back and then notify me through my phone and a small motor to generate a vibration."
+      "content": "I've always had a pretty bad slouch and I've always *wanted* it gone but never really had the means to fix it. No matter what strategies I employed, I always ended up forgetting my goal and just going back to slouching. Over the summer between my Junior and Senior years of High School, I set out to develop a way to fix my slouch using technology. This would not only help my posture but also help me develop valuable hardware and software design skills. After some investigation I came to the conclusion that the best way to solve my problem would be to develop a small product that would use a variable resistor to detect my slouch and then notify me through my phone and a small motor to generate a vibration."
     },
     {
       "type": "text",

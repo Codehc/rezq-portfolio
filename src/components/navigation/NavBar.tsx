@@ -6,8 +6,8 @@ const NavBar = () => {
   const navigate = useNavigate();
   
   return (
-    <div>
-      <NavButton label="Home" navigate={navigate} route="/" />
+    <div className="flex flex-row">
+      <NavButton navigate={navigate} route="/">Reza Bagheri</NavButton>
     </div>
   )
 }

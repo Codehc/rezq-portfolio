@@ -1,18 +1,24 @@
-import React from "react";
+import React, { PropsWithChildren, ReactNode } from "react";
 import { NavigateFunction } from "react-router-dom";
+import clsx from "clsx";
 
 const NavButton = ({
-  label,
+  className,
   navigate,
   route,
+  children,
  }: {
-  label: string;
+  className?: string;
   navigate: NavigateFunction;
   route: string;
+  children: ReactNode;
  }) => {
   return (
-    <button className="p-2 hover:bg-opacity-20 hover:bg-gray-500" onClick={() => navigate(route)}>
-      {label}
+    <button className={clsx(
+      "p-2 first:text-rp-ultralight-gray text-rp-light-gray link-underline link-underline-black hover:bg-opacity-20 hover:bg-gray-500",
+      className,
+    )} onClick={() => navigate(route)}>
+      {children}
     </button>
   )
 }

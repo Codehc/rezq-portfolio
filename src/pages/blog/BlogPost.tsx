@@ -9,9 +9,12 @@ const BlogPost = () => {
   const postParsed = posts(`./${post}.json`);
 
   return (
-    <FullContextPage className="flex justify-center">
-      <div className="flex flex-col gap-y-2 w-4/6 p-2 rounded-md border-4 border-gray-300 bg-gray-200">
-        <p className="font-bold text-4xl">{postParsed.title}</p>
+    <FullContextPage className="flex justify-center bg-rp-dark-gray">
+      <div className="flex flex-col gap-y-2 w-4/6 p-2">
+        <p className="font-bold text-4xl text-rp-ultralight-gray underline">{postParsed.title}</p>
+        <p className="text-2xl underline">
+          {postParsed.series} #{postParsed.seriesId}
+        </p>
         {
           postParsed.content.map(({ 
             type,

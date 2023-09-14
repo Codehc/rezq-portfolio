@@ -1,0 +1,28 @@
+{
+  "title": "Powering PoseFixer",
+  "series": "PoseFixer",
+  "seriesId": 2,
+  "previewImage": {
+    "name": "powering_posefixer/cr2032.png",
+    "loadingColor": "#5d5857"
+  },
+  "previewText": "A wearable device to monitor posture? Nice... but how to go about powering it?",
+  "content": [
+    {
+      "type": "text",
+      "content": "I had a basic idea of what PoseFixer needed in order to work but one of the biggest questions still remained: how was I going to power it? Putting an large battery pack on someone's back isn't comfrotable so the battery would have to be tiny but I also had to be able to supply around 15 mA @ 3V for short periods of time when the motor was vibrating. This question would end up taking me a lot longer to answer than I had originally thought."
+    },
+    {
+      "type": "text",
+      "content": "My first option was a coin cell battery. These seem pretty ideal at first, they're small, light, and are often rated for 3V which is just what I need. Their major drawbacks are their relatively low capacity and inability to supply higher current draw applications for longer periods of time (15mA for 3 seconds). Having a low capacity is an obvious red flag but somewhat inevitable when one of the design requirements is for the battery to be tiny and low-mass. After doing some back of the napkin calculations I calculated that the capacity of a CR2032 Lithium Coin Cell battery would suffice for this project. The bigger concern was the low max current output of the CR2032 coin cell. According to many datasheets of different CR2032 cells from different suppliers the cells cannot provide very much current for long. The Energizer datasheet recommends pulling around 6.8 mA @ 2.7V for up to 2 seconds. I will need up to 15 mA @ 3V for 3-5 seconds. It's very common for datasheets to undersell their recommended use cases in order to under promise and over deliver so this drawback isn't going to completely eliminate coin cells as an option."
+    },
+    {
+      "type": "text",
+      "content": "AAA batteries are a great alternative to coin cell batteries. Their major drawback is their weight. A AAA battery can easily provide multiple times more than enough power for powering a PoseFixer module and can also last a long time while doing it. A small AAA battery holds ~850 mAh of charge while a large CR2032 battery holds ~250 mAh while also providing up to 50 mA for around 17 hours which is far more than we need. Unfortunately, AAA batteries weigh around 11.5 grams while CR2032 batteries weigh only around 3 grams."
+    },
+    {
+      "type": "text",
+      "content": "Ultimately I decided that I would have to test both types of batteries in order to make a good selection. There are *tons* of factors that I would have to take into account in order to effectively make a decision on paper and it would be much faster for me to just make a development board (which I was already planning on doing) and just test the dev board with both types of batteries to see which type works best. This also gives me the option to test other batteries I haven't looked into yet that I may learn about in the coming weeks. I purchased a bunch of CR2032 batteries as well as a pack of AAA batteries and proper battery holders that broke out the power to wires I could use with a breadboard in order to test with my dev board."
+    }
+  ]
+}

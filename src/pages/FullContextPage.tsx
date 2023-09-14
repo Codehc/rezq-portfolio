@@ -10,7 +10,7 @@ const FullContextPage = ({
   className?: string;
 }) => {
   return (
-    <div className="h-screen w-screen bg-slate-200">
+    <div className="h-screen w-screen bg-rp-dark-gray">
       <NavBar />
       <div className={className}>
         {children}
